@@ -35,3 +35,24 @@ let s = 'aa'
 let t = 'a';
 
 console.log(isAnagram(s, t))
+
+function isAnagram2(s, t) {
+    if(s.length !== t.length) {
+        return false;
+    }
+    const str = 'abcdefghijklmnopqrstuvwxyz';
+    let obj = {};
+    str.split('').forEach(s => {
+        obj[s] = 0
+    });
+    for(let i = 0; i < s.length; i++){
+        obj[s[i]]++;
+        obj[t[i]]--;
+    }
+    return Object.values(obj).every(item => item ===0)
+}
+
+const s2 = "anagram", t2 = "nagaram";
+const s3 = 'rat', t3 = 'car';
+console.log(isAnagram2(s2, t2));
+console.log(isAnagram2(s3, t3));
