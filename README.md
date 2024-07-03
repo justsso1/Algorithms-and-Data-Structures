@@ -13,8 +13,8 @@ Javascript版本的数据结构和算法
 
 TODO
 
-1. done-写一个网站，展示 data_structures leetcode_js 文件夹下的内容
-2. done-利用hightlight 代码高亮展示出来，思路写在注释里面
+1. [x] 写一个网站，展示 data_structures leetcode_js 文件夹下的内容
+2. [x] 利用hightlight 代码高亮展示出来，思路写在注释里面
 3. 网站自动化部署，利用github webhooks
 
 
