@@ -105,7 +105,7 @@ var lengthOfLongestSubString5 = function(s){
             m.set(s[right], right);
             right ++;
         }else{
-            m = Math.max(max, m.size());
+            max = Math.max(max, m.size);
             let temp = m.get(s[right]);
             left = temp + 1;
             right = left;

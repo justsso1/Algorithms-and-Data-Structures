@@ -22,5 +22,5 @@ function add(a){  // a 是一个闭包
 //     add(1)(2)(3), // 6
 //     add(1)(2)(3)(4) // 10
 // )
-let res = "" + add(1)(2)
-console.log(res)
+// let res = "" + add(1)(2)
+// console.log(res)
